@@ -1,0 +1,648 @@
+body {
+  font-size: 16px;
+  font-family: "Nunito", sans-serif;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  background-color: #f2f2f2;
+}
+
+/* main-setup */
+
+.center-object {
+  margin: 0 auto;
+}
+
+.text-title {
+  font-size: 4em;
+  font-weight: 400;
+}
+
+.second-text-title {
+  font-size: 1.25em;
+  font-weight: 200;
+}
+
+.nav {
+  padding-bottom: 2rem;
+}
+
+.text-margin {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+button {
+  margin-top: 1rem;
+  margin-left: 7.5rem;
+  padding: 10px;
+  border-radius: 5px;
+  border-style: none;
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+  color: #1267a1;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+.nav-header {
+  transform: translateY(30%);
+  z-index: 1;
+  list-style: none;
+}
+
+.nav-header a:hover {
+  color: #f2f2f2;
+}
+
+.home-page-icon {
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.home-page-icon:hover {
+  opacity: 0.3;
+  transition: transform 0.2s;
+  border-radius: 0.5rem;
+}
+
+.menu-link {
+  text-decoration: none;
+  margin: 2rem;
+}
+
+.john-j {
+  font-size: 6em;
+  margin-top: -1rem;
+  margin-bottom: 0.5rem;
+}
+
+.profession {
+  margin-top: 0.3rem;
+  margin-bottom: 0.4rem;
+}
+
+.kim {
+  font-size: 6rem;
+  margin-top: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+.reels:hover {
+  transform: scale(1.1);
+  box-shadow: 2px 2px 5px black;
+  transition: transform 0.2s;
+}
+
+.reels-page h1 {
+  margin-bottom: 1rem;
+}
+
+.reels-page i {
+  font-size: 0;
+  line-height: 0;
+}
+
+.graphics-gallery img:hover {
+  transform: scale(1.1);
+  box-shadow: 2px 2px 5px black;
+  transition: transform 0.2s;
+}
+
+.about-page img {
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.about-page img:hover {
+  transform: scale(1.1);
+  box-shadow: 2px 2px 5px black;
+  transition: transform 0.2s;
+}
+
+.about-title h1 {
+  margin-bottom: 0.3rem;
+}
+
+.about-title h3 {
+  margin-top: 0.2rem;
+  margin-bottom: 2rem;
+}
+
+.capital {
+  font-size: 2.8em;
+  font-weight: 600;
+  padding: 0.5px;
+  margin-right: 0.1rem;
+  margin-bottom: 0.1rem;
+  float: left;
+}
+
+.about-page h1 {
+  margin-bottom: 0.2rem;
+}
+
+.about-page h3 {
+  margin-top: 0.3rem;
+  margin-bottom: 2rem;
+}
+
+.biography {
+  margin-top: 1.25rem;
+  padding: 1.25rem;
+  background-color: #f2f2f2;
+  border-radius: 0.5rem;
+}
+
+.resume:hover {
+  color: #f2f2f2;
+  background-color: #ea9e24;
+}
+
+.resume {
+  background-color: #f2f2f2;
+}
+
+button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+button:hover span {
+  padding-right: 25px;
+}
+
+button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.contact-info {
+  font-size: 1.5em;
+  font-weight: 400;
+  margin-bottom: 3rem;
+}
+
+footer {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.quote-of-the-day {
+  font-size: 1.2em;
+  font-weight: 200;
+  font-style: italic;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.albert {
+  font-size: 1.2em;
+  font-weight: 400;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.icons {
+  font-size: 0;
+  line-height: 0;
+  padding-bottom: 3rem;
+  padding: 0.5rem;
+}
+
+/* Side-Menu-Column */
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  background-color: #1267a1;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  text-align: center;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+/* Class Sets */
+.h-0 {
+  height: 0;
+  overflow: hidden;
+}
+
+.w-100vw {
+  width: 100vw;
+}
+
+.h-100vh {
+  height: 100vh;
+}
+
+.bg-dark-blue {
+  background-color: #1267a1;
+}
+
+.bg-yellow {
+  background-color: #ea9e24;
+}
+
+.text-blue {
+  color: #1267a1;
+}
+
+.text-yellow {
+  color: #ea9e24;
+}
+
+.text-white {
+  color: #f2f2f2;
+}
+
+.py-1rem {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.px-1-5rem {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.my-0 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.my-1rem {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.justify-content-space-between {
+  justify-content: space-between;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.box-sizing-border-box {
+  box-sizing: border-box;
+}
+
+.font-size-1-5-em {
+  font-size: 1.5em;
+}
+
+.dropdown-menu {
+  text-align: center;
+}
+
+.mobile-only {
+  display: none;
+}
+
+.small-tablet-only {
+  display: none;
+}
+
+.large-tablet-only {
+  display: none;
+}
+
+.desktop-only {
+  display: none;
+}
+
+/* Mobile */
+@media only screen and (max-width: 376px) {
+  .mobile-only {
+    display: block;
+  }
+
+  .reels-page img {
+    max-width: 100%;
+    border-radius: 0.5rem;
+  }
+
+  .contact-info {
+    font-size: 1em;
+    font-weight: 400;
+    margin-bottom: 3rem;
+    justify-content: space-between;
+  }
+
+  .select-image {
+    max-width: 100%;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+  }
+}
+
+/* Ipad Mini */
+@media only screen and (min-width: 377px) and (max-width: 769px) {
+  .small-tablet-only {
+    display: block;
+  }
+}
+
+/* Ipad Pro */
+@media only screen and (min-width: 770px) and (max-width: 1025px) {
+  .large-tablet-only {
+    display: block;
+  }
+
+  .ip-my-2rem {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .name-ipad {
+    margin-top: 20rem;
+  }
+
+  .mascot {
+    margin-top: -60rem;
+    margin-bottom: 2rem;
+    margin-left: 34rem;
+  }
+
+  .title-name {
+    margin-left: 1rem;
+  }
+
+  .desktop-left-column {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+
+  .desktop-image h2 {
+    margin-left: 5rem;
+  }
+
+  .desktop-left-column h2 {
+    margin-left: 0rem;
+  }
+
+  .graphics-gallery img {
+    margin-left: 11rem;
+    border-radius: 2rem;
+    padding: 1rem;
+  }
+
+  .reels-page img {
+    max-width: 100%;
+    border-radius: 0.5rem;
+  }
+
+  .about-page img {
+    max-width: 100%;
+  }
+
+  .biography {
+    margin-top: 4rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .biography p {
+    font-size: 28px;
+  }
+
+  .contact-bubbles {
+    margin-top: -1rem;
+    margin: 1rem;
+  }
+
+  button {
+    margin-left: 28rem;
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1026px) {
+  .desktop-only {
+    display: block;
+  }
+
+  .dt-py-4rem {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .dt-font-size-3em {
+    font-size: 3em;
+  }
+
+  .dt-px-3rem {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  section {
+    display: flex;
+    flex-direction: row;
+  }
+
+  header nav {
+    margin-right: 10rem;
+  }
+
+  .desktop-left-column {
+    margin-left: 12rem;
+    margin-right: 5rem;
+  }
+
+  .desktop-right-column {
+    margin-right: 12rem;
+    margin-left: 5rem;
+  }
+
+  .header-logo-desktop {
+    margin-left: 10rem;
+  }
+
+  .desktop-title-name {
+    font-size: 7em;
+    font-weight: 400;
+  }
+
+  .desktop-second-text-title {
+    font-size: 2em;
+    font-weight: 300;
+  }
+
+  .john-j {
+    font-size: 10em;
+    margin-top: 8rem;
+    margin-bottom: 0rem;
+  }
+
+  .kim {
+    font-size: 10em;
+    margin-top: 0rem;
+  }
+
+  .mascot {
+    margin-top: -1rem;
+    margin-bottom: 2rem;
+    margin-left: 28rem;
+  }
+
+  .reels-page {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .reels-page div {
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+  }
+
+  .reels-page img {
+    border-radius: 0.5rem;
+    margin-top: 6rem;
+  }
+
+  .graphics-gallery img {
+    cursor: pointer;
+    border-radius: 0.5rem;
+    margin: 1rem;
+    margin-left: 2.5rem;
+  }
+
+  .bio {
+    margin-right: 1rem;
+  }
+
+  .about-page img {
+    max-width: 100%;
+  }
+
+  .capital {
+    font-size: 1.5em;
+    font-weight: 700;
+    padding: 0.3px;
+    margin-right: 0.1rem;
+    margin-bottom: 0.5rem;
+    float: left;
+  }
+
+  .biography {
+    font-size: 2em;
+    font-weight: 300;
+    padding: 3rem;
+    background-color: #f2f2f2;
+    border-radius: 0.5rem;
+    margin-top: 5rem;
+    margin-left: 10rem;
+    margin-right: 13rem;
+  }
+
+  button {
+    font-size: 1.5rem;
+    margin: 3rem;
+    margin-left: 33rem;
+    padding: 0.75rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .contact-bubbles {
+    max-width: 95%;
+    padding-left: 5rem;
+    padding-right: 11rem;
+  }
+
+  .contact-page button {
+    margin-bottom: 3rem;
+  }
+
+  .contact-page h1 {
+    margin-bottom: 2rem;
+  }
+
+  .quote-of-the-day {
+    font-size: 2em;
+    font-weight: 100;
+    padding-left: 20rem;
+    padding-right: 20rem;
+  }
+
+  .albert {
+    font-size: 2em;
+    font-weight: 600;
+  }
+}
