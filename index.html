@@ -27,10 +27,11 @@
           id="myHeader" class="sticky header w-100vw bg-dark-blue py-1rem px-1-5rem flex-row justify-content-space-between box-sizing-border-box ip-py-2rem dt-px-3rem dt-py-4rem"
         >
           <h1 class="text-yellow my-0 text-bold dt-font-size-3em">
+            <a href="#homepage" onclick="smoothScroll('webPages');">
             <img
               id="click-image" class="select-image home-page-icon header-logo-desktop"
               src="../images/Web-Homepage-2019-mobile.png"
-            />
+            /></a>
           </h1>
           <i
             class="dropdown-menu-toggle flex-column material-icons text-yellow mobile-only small-tablet-only large-tablet-only"
@@ -38,16 +39,16 @@
             >menu</i
           >
           <nav class="desktop-only nav-header" id="deskopNav">
-            <a href="page.html#reels" class="menu-link text-yellow font-size-1-5-em mr-1rem" onmouseover="hoverLink(event, 'home')"
+            <a href="#idreels" class="menu-link text-yellow font-size-1-5-em mr-1rem" onclick="smoothScroll('videos');"
               >REELS</a
             >
-            <a href="page.html#graphics" class="menu-link text-yellow font-size-1-5-em mr-1rem" onmouseover="hoverLink(event, 'work')"
+            <a href="#idgraphics" class="menu-link text-yellow font-size-1-5-em mr-1rem" onclick="smoothScroll('galleryImages');"
               >GRAPHICS</a
             >
-            <a href="page.html#about" class="menu-link text-yellow font-size-1-5-em mr-1rem" onmouseover="hoverlink(event, 'about')"
+            <a href="#idabout" class="menu-link text-yellow font-size-1-5-em mr-1rem" onclick="smoothScroll('aboutJohn');"
               >ABOUT</a
             >
-            <a href="page.html#contact" class="menu-link text-yellow font-size-1-5-em mr-1rem" onmouseover="hoverlink(event, 'contact')"
+            <a href="#idcontact" class="menu-link text-yellow font-size-1-5-em mr-1rem" onclick="smoothScroll('letsConnect');"
               >CONTACT</a
             >
           </nav>
@@ -58,22 +59,22 @@
       >
         <a
           href="#reels"
-          class="link text-yellow font-size-1-5-em inline-block my-1rem ml-1rem"
+          class="link text-yellow font-size-1-5-em inline-block my-1rem ml-1rem" onclick="smoothScroll('videos');"
           >REELS</a
         >
         <a
           href="#graphics"
-          class="link text-yellow font-size-1-5-em inline-block my-1rem ml-1rem"
+          class="link text-yellow font-size-1-5-em inline-block my-1rem ml-1rem" onclick="smoothScroll('galleryImages');"
           >GRAPHICS</a
         >
         <a
           href="#about"
-          class="link text-yellow font-size-1-5-em inline-block my-1rem ml-1rem"
+          class="link text-yellow font-size-1-5-em inline-block my-1rem ml-1rem" onclick="smoothScroll('aboutJohn');"
           >ABOUT</a
         >
         <a
           href="#contact"
-          class="link text-yellow font-size-1-5-em inline-block my-1rem ml-1rem"
+          class="link text-yellow font-size-1-5-em inline-block my-1rem ml-1rem" onclick="smoothScroll('letsConnect');"
           >CONTACT</a
         >
       </nav>
@@ -89,7 +90,7 @@
               <img class="mascot" src="../images/MascotLogo-Offical.png" />
             </div>
           </section>
-          <section class="reels-page text-white bg-dark-blue py-1rem px-1-5rem">
+          <section id="videos" class="reels-page text-white bg-dark-blue py-1rem px-1-5rem">
             <div class="desktop-image desktop-left-column">
               <h1 class="text-title desktop-title-name desk">REELS</h1>
               <h2 class="second-text-title desktop-second-text-title">3D ANIMATION REEL</h2>
@@ -100,7 +101,7 @@
               <img class="reels" src="../images/MoeNutsSampleImage.png" /><i class="thesis-film">::before</i></a>
             </div>
           </section>
-          <section class="graphics-page text-blue bg-light-gray py-1rem px-1-5rem">
+          <section id="galleryImages"class="graphics-page text-blue bg-light-gray py-1rem px-1-5rem">
             <div class="title-name">
               <h1 class="text-title desktop-title-name desktop-left-column">GRAPHICS</h1>
               <div id="graphics-slideshow" class="graphics-gallery">
@@ -128,7 +129,7 @@
               </div>
             </div>
           </section>
-          <section class="about-page text-white bg-dark-blue py-1rem px-1-5rem">
+          <section id="aboutJohn" class="about-page text-white bg-dark-blue py-1rem px-1-5rem">
             <div class="bio title-name desktop-left-column">
               <h1 class="text-title desktop-title-name">ABOUT</h1>
               <h3 class="second-text-title desktop-second-text-title">JOHN J. KIM</h3>
@@ -157,7 +158,7 @@
               <span>RESUME</span></a></button>
             </div>
           </section>
-          <footer class="bg-light-gray text-blue py-1rem px-1-5rem">
+          <footer id="letsConnect" class="bg-light-gray text-blue py-1rem px-1-5rem">
             <div class="bg-light-gray inside-footer">
               <h1 class="text-title desktop-title-name">LET's CONNECT</h1>
               <div class="contact-info">
@@ -185,7 +186,7 @@
           </footer>
           </main>
         </div>
-    <script src="js/links.js" type="text/javascript"></script>
+    <script src="js/scroll-down.js" type="text/javascript"></script>
     <script src="js/side-menu.js" type="text/javascript"></script>
     <script src="js/sticky-header.js" type="text/javascript"></script>
   </body>
