@@ -45,6 +45,10 @@ button {
   color: #1267a1;
 }
 
+header {
+  z-index: 99;
+}
+
 .sticky {
   position: fixed;
   top: 0;
@@ -391,6 +395,20 @@ footer {
     display: block;
   }
 
+  header {
+    z-index: 99;
+  }
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  .sticky + .content {
+    padding-top: 102px;
+  }
+
   .reels-page img {
     max-width: 100%;
     border-radius: 0.5rem;
@@ -514,6 +532,21 @@ footer {
   section {
     display: flex;
     flex-direction: row;
+  }
+
+  .welcome-page {
+    margin-top: 15rem;
+  }
+
+  header {
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  .sticky + .content {
+    padding-top: 102px;
   }
 
   header nav {
